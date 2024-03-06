@@ -8,8 +8,7 @@ function drawCell(x, y, d) {
     //d is the width and height because it's a square
     ctx.beginPath();
     ctx.fillStyle = "blue";
-    //d is divided by two because for some fucking reason it adds d to d when doing height
-    ctx.fillRect(x, y, d, d/2);
+    ctx.fillRect(x, y, d);
     ctx.fill();
     ctx.closePath();
 }
